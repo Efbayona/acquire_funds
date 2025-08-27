@@ -1,0 +1,32 @@
+server:
+  port: 8002
+  servlet:
+    context-path: /app
+  compression:
+    enabled: true
+    min-response-size: 1024
+    mime-types: application/json,application/xml
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: yorksanc@gmail.com
+    password: lfrwjavbmczhflsd
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  data:
+    mongodb:
+      uri: mongodb://Yorman24:Profeta2@localhost:27017/founds-db?authSource=admin
+springdoc:
+  swagger-ui:
+    enabled: true
+  api-docs:
+    enabled: true
+settings:
+  application:
+    name: funds

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  funds:
+    image: mongo:latest
+    container_name: founds-db
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_DATABASE: founds
+      MONGO_INITDB_ROOT_USERNAME: edwin
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+    ports:
+      - "27017:27017"
+    expose:
+      - 27017
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
