@@ -21,7 +21,7 @@ spring:
             required: true
   data:
     mongodb:
-      uri: mongodb://Yorman24:Profeta2@localhost:27017/founds-db?authSource=admin
+      uri: mongodb://edwin:123456@localhost:27017/founds-db?authSource=admin
 springdoc:
   swagger-ui:
     enabled: true
