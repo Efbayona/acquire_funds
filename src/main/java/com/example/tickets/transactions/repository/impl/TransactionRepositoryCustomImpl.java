@@ -31,6 +31,7 @@ public class TransactionRepositoryCustomImpl implements TransactionRepositoryCus
                         .and("fund.name").as("nameAcquiredFund")
                         .and("fund.minimumAmount").as("minimumAmount")
                         .and("fund.category").as("category")
+                        .and("fund.acquireFundsId").as("acquireFundsId")
         );
 
         AggregationResults<TransactionResponse> results = mongoTemplate.aggregate(aggregation, "transactions", TransactionResponse.class);

@@ -27,6 +27,9 @@ public record TransactionResponse(
         Double minimumAmount,
 
         @JsonProperty("category")
-        String category
+        String category,
+
+        @JsonProperty("acquire_funds_id")
+        String acquireFundsId
 ) {
 }
